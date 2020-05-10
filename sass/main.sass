@@ -1,0 +1,162 @@
+*,*::before, *::after
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    font-size: 62.5%
+    scroll-behavior: smooth
+
+body
+    font-family: 'Montserrat', sans-serif
+    font-size: 1.5rem
+
+ul
+    list-style: none
+
+a
+    text-decoration: none
+
+// 
+
+$primary-color: #007bff
+
+// 
+.container
+    width: 100%
+    max-width: 1280px
+    margin: 0 auto
+    padding: 1.5rem
+
+    .hide
+        display: none
+
+    .hideMenu
+        transform: translateX(-100%)
+// 
+
+.callus
+    position: absolute
+    height: 70px
+    width: 70px
+    display: flex
+    justify-content: center
+    align-items: center
+    background-color: $primary-color
+    color: white
+    bottom: 1.5rem
+    right: 1.5rem
+    font-size: 3rem
+    border-radius: 50%
+    box-shadow: 0 10px 20px rgba(0,0,0,0.09), 0 6px 6px rgba(0,0,0,0.13)
+    cursor: pointer
+
+#header
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    nav
+        display: flex
+        align-items: center
+        justify-content: space-between
+        z-index: 1200
+        .menu-toggle
+            cursor: pointer
+            position: absolute
+            color: white
+            font-size: 3rem
+            top: 1.5rem
+            right: 1.5rem
+            z-index: 5000
+        .logo
+            position: absolute
+            top: 2.3rem
+            left: 1.5rem
+            text-decoration: none
+            color: white
+            font-weight: bold
+            font-size: 2rem
+            i
+                color: $primary-color
+        .nav-list
+            position: fixed
+            top: 0
+            left: 0
+            width: 70vw
+            height: 100vh
+            background-color: $primary-color
+            display: flex
+            flex-direction: column
+            text-align: center
+            padding: 2.5rem
+            align-items: center
+            justify-content: space-evenly
+            box-shadow: 0 10px 20px rgba(0,0,0,0.20), 0 6px 6px rgba(0,0,0,0.23)
+            transition: transform .6s
+            z-index: 6000
+
+            li
+                a
+                    color: white
+                    font-size: 3rem
+                    font-weight: 800
+                    text-transform: uppercase
+        .nav-background
+            position: fixed
+            top: 0
+            left: 0
+            height: 100vh
+            width: 100vw
+            background-color: black
+            z-index: 100
+            opacity: .5
+            transition: transform .7s
+#hero
+    height: 400px
+    display: flex
+    justify-content: center
+    align-items: center
+    text-align: center
+    background-image: url(/img/hero.jpg)
+    background-size: cover
+    background-position: center
+    color: white
+    .heading
+        font-size: 2rem
+        margin-bottom: 1rem
+    .subheading
+        font-size: 1.2rem
+        margin-bottom: 4rem
+    .search-form
+        display: inline-block
+        justify-content: center
+        border-radius: 5px
+        overflow: hidden
+        width: 80%
+        height: 60px
+        box-shadow: 0 10px 20px rgba(0,0,0,0.10), 0 6px 6px rgba(0,0,0,0.13)
+        .searchinput
+            display: inline
+            width: 70%
+            padding: 1rem
+            outline: none
+            float: left
+            height: 100%
+            border: none
+            color: #333
+            font-weight: normal
+        ::placeholder
+            color: rgba(0, 0, 0, .5)
+        .searchbtn
+            float: right
+            height: 100%
+            display: inline
+            cursor: pointer
+            width: 30%
+            background-color: $primary-color
+            font-size: 1.4rem
+            font-weight: 600
+            color: white
+            border: none
+            outline: none

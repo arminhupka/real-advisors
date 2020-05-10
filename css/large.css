@@ -1,0 +1,74 @@
+#header nav .menu-toggle {
+  display: none;
+}
+
+#header nav .logo {
+  position: initial;
+}
+
+#header nav .nav-list {
+  position: initial;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: auto;
+  width: auto;
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+#header nav .nav-list li {
+  margin-right: 2.5rem;
+}
+
+#header nav .nav-list li a {
+  font-size: initial;
+  padding-bottom: .5rem;
+  font-weight: initial;
+}
+
+#header nav .nav-list li a:hover {
+  border-bottom: 2px solid white;
+}
+
+#hero {
+  height: 600px;
+}
+
+#hero .heading {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+#hero .subheading {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+#hero .search-form {
+  margin-top: 2rem;
+  height: 70px;
+  width: 70%;
+  -webkit-transition: -webkit-transform .6s;
+  transition: -webkit-transform .6s;
+  transition: transform .6s;
+  transition: transform .6s, -webkit-transform .6s;
+}
+
+#hero .search-form:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#hero .search-form .searchinput {
+  font-size: 2rem;
+  padding: 1rem 3rem;
+}
+/*# sourceMappingURL=large.css.map */
