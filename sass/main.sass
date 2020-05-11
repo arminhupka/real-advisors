@@ -97,9 +97,16 @@ $primary-color: #007bff
             z-index: 6000
 
             li
+                background: #fff
+                padding: 2rem 3rem
+                border-radius: 50px
+                transition: transform .6s, box-shadow .6s
+                &:hover
+                    transform: scale(1.2)
+                    box-shadow: 0 10px 20px rgba(0,0,0,0.20), 0 6px 6px rgba(0,0,0,0.23)
                 a
-                    color: white
-                    font-size: 3rem
+                    color: #333
+                    font-size: 1.4rem
                     font-weight: 800
                     text-transform: uppercase
         .nav-background

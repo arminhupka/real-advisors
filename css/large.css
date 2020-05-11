@@ -26,9 +26,20 @@
 
 #header nav .nav-list li {
   margin-right: 2.5rem;
+  padding: initial;
+  background: initial;
+  border-radius: initial;
+}
+
+#header nav .nav-list li:hover {
+  -webkit-transform: none;
+          transform: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #header nav .nav-list li a {
+  color: #fff;
   font-size: initial;
   padding-bottom: .5rem;
   font-weight: initial;
